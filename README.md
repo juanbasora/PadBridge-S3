@@ -50,65 +50,6 @@ Connect ESP32 GND to target device GND first, then wire each GPIO to the corresp
 | Select | 11 | Select pad |
 | Start | 12 | Start pad |
 
-## Wiring Diagram (ASCII)
-
-```text
-BLE Controller
-      ))))   (wireless over BLE)
-        |
-        v
-+---------------------------+
-| ESP32-S3-Zero             |
-|                           |
-| GPIO1  -----------------> A pad
-| GPIO2  -----------------> B pad
-| GPIO3  -----------------> X pad
-| GPIO4  -----------------> Y pad
-| GPIO5  -----------------> L shoulder pad
-| GPIO6  -----------------> R shoulder pad
-| GPIO7  -----------------> D-pad Up pad
-| GPIO8  -----------------> D-pad Down pad
-| GPIO9  -----------------> D-pad Left pad
-| GPIO10 -----------------> D-pad Right pad
-| GPIO11 -----------------> Select pad
-| GPIO12 -----------------> Start pad
-|                           |
-| GND    -----------------> Target GND (required)
-| USB-C  <----------------> PC (power/programming)
-+---------------------------+
-              |
-              v
-       Target Device
-   (example: Nintendo DS Lite)
-
-Optional: add a 100-330 ohm series resistor on each GPIO line.
-```
-
-## Wiring Diagram (Mermaid)
-
-```mermaid
-flowchart LR
-    C[BLE Controller] -. BLE .-> E[ESP32-S3-Zero]
-
-    subgraph W[GPIO to Target Pads]
-      E1[GPIO1] --> A[A pad]
-      E2[GPIO2] --> B[B pad]
-      E3[GPIO3] --> X[X pad]
-      E4[GPIO4] --> Y[Y pad]
-      E5[GPIO5] --> L[L shoulder pad]
-      E6[GPIO6] --> R[R shoulder pad]
-      E7[GPIO7] --> U[D-pad Up pad]
-      E8[GPIO8] --> D[D-pad Down pad]
-      E9[GPIO9] --> LF[D-pad Left pad]
-      E10[GPIO10] --> RT[D-pad Right pad]
-      E11[GPIO11] --> SEL[Select pad]
-      E12[GPIO12] --> ST[Start pad]
-    end
-
-    E --- G[ESP32 GND]
-    G --> TG[Target GND]
-    PC[PC / USB Power] <--> E
-```
 
 ## Electrical Notes
 
