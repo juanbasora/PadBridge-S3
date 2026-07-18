@@ -84,10 +84,7 @@ enum Group { BTN, DPAD, MISC };
 #define B_Y         0x0008
 #define B_L1        0x0010   // left bumper / shoulder
 #define B_R1        0x0020   // right bumper / shoulder
-#define B_L2        0x0040   // left trigger (digital)
-#define B_R2        0x0080   // right trigger (digital)
-#define B_THUMB_L   0x0100   // left stick press  (L3)
-#define B_THUMB_R   0x0200   // right stick press (R3)
+
 // dpad() bitmask
 #define D_UP        0x01
 #define D_DOWN      0x02
