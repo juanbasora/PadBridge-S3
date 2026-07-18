@@ -63,10 +63,10 @@ Connect ESP32 GND to target device GND first, then wire each GPIO to the corresp
    - `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json`
    - `https://raw.githubusercontent.com/ricardoquesada/esp32-arduino-lib-builder/master/bluepad32_files/package_esp32_bluepad32_index.json`
 2. Install `esp32_bluepad32 by Ricardo Quesada` from Boards Manager.
-3. Select an ESP32-S3 board from the `(bluepad32)` group.
+3. Select an ESP32S3 Dev Module board from the `(esp32_bluepad32)` group.
 4. Set USB CDC On Boot to Enabled.
 5. Upload sketch.
 
 ## Sketch File
 
-- `ble_controller_to_gpio_3.ino`
+- `PadBridge-S3.ino`
