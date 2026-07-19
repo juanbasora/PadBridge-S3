@@ -57,6 +57,12 @@ Connect ESP32 GND to target device GND first, then wire each GPIO to the corresp
 - Optional 100-330 ohm series resistor per line is recommended as wiring protection.
 - Verify target pad idle voltage is <= 3.3V before soldering.
 
+## Features in progress
+
+- Add joystick support (left joystick only)
+- Screen switch mod support (For DS lite)
+
+
 ## Arduino IDE Setup (Quick)
 
 1. Add board manager URLs:
