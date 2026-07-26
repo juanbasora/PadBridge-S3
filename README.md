@@ -59,8 +59,8 @@ Connect ESP32 GND to target device GND first, then wire each GPIO to the corresp
 
 ## Features in progress
 
-- Add joystick support (left joystick only)
-- Screen switch mod support (For DS lite)
+~~- Add joystick support (left joystick only)~~ Done and tested.
+- Screen switch mod support (For DS lite) (Added but not tested)
 
 
 ## Arduino IDE Setup (Quick)
