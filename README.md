@@ -37,10 +37,10 @@ Connect ESP32 GND to target device GND first, then wire each GPIO to the corresp
 
 | Controller Input | ESP32 GPIO | Attach To Target Pad |
 |---|---:|---|
-| A | 1 | A button pad |
-| B | 2 | B button pad |
-| X | 3 | X button pad |
-| Y | 4 | Y button pad |
+| A | 1 | B button pad |
+| B | 2 | A button pad |
+| X | 3 | Y button pad |
+| Y | 4 | X button pad |
 | L1 | 5 | L shoulder pad |
 | R1 | 6 | R shoulder pad |
 | D-pad Up | 7 | D-pad Up pad |
